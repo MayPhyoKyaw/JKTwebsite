@@ -1,0 +1,667 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>JKT Myanmar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <style>
+        .scroll {
+            color: #fff;
+            margin-top: 100px
+        }
+
+        #toTopBtn {
+            position: fixed;
+            bottom: 26px;
+            right: 39px;
+            z-index: 98;
+            padding: 21px;
+            background-color: rgba(84, 148, 232, 0.8)
+        }
+
+        /* .cd-top--fade-out {
+            opacity: .5
+        }
+
+        .cd-top--is-visible {
+            visibility: visible;
+            opacity: 1
+        }
+
+        .js-cd-top {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .3s, visibility .3s, background-color .3s
+        } */
+
+        .cd-top {
+            position: fixed;
+            bottom: 20px;
+            bottom: var(--cd-back-to-top-margin);
+            right: 20px;
+            right: var(--cd-back-to-top-margin);
+            display: inline-block;
+            height: 40px;
+            height: var(--cd-back-to-top-size);
+            width: 40px;
+            width: var(--cd-back-to-top-size);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+            background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+            background-color: rgba(84, 148, 232, 0.8);
+            background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('#toTopBtn').fadeIn();
+                } else {
+                    $('#toTopBtn').fadeOut();
+                }
+            });
+
+            $('#toTopBtn').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-area">
+            <div id="sticky-header" class="main-header-area white-bg">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center justify-content-between no-gutters">
+                        <div class="col-xl-4 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html" style="font-size: x-large;">
+                                    <img src="img/banner/logo.jpg" alt="" height="60px" width="60px"><span style="font-weight: bolder; font-size: larger; color: #029eff;">JKT</span> International Myanmar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" style="font-size: 15px;" href="index.html">home</a></li>
+                                        <li><a href="about.html" style="font-size: 15px;">About</a></li>
+                                        <li><a href="#" style="font-size: 15px;">Activity</a></li>
+
+                                        <li><a href="service.html" style="font-size: 15px;">Services <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                               <li><a href="oversea.html" style="font-size: 13px;">Overseas Employment</a></li>
+                                               <li><a href="#" style="font-size: 13px;">IT Services</a></li>
+                                               <li><a href="business.html" style="font-size: 13px;">Business Consultant</a></li>
+                                               <li><a href="#" style="font-size: 13px;">Travel and Tours</a></li>
+                                            </ul>
+                                        </li>
+  
+                                        <li><a href="training.html" style="font-size: 15px;">Training <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                               <li><a href="jp-school.html" style="font-size: 13px;">Japanese Language School</a></li>
+                                               <li><a href="#" style="font-size: 13px;">Vocational Training</a></li>
+                                               <li><a href="#" style="font-size: 13px;">HR Training</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li><a href="contact.html" style="font-size: 15px;">Contact</a></li>
+                                        <li><a href="#" style="font-size: 15px;">Careers</a></li>
+                                        <li style="float: right;">
+                                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="margin-top: 20px;">
+                                                <div class="btn-group" role="group" aria-label="First group">
+                                                  <button type="button" class="btn" style="background-color: rgba(61, 164, 233, 0.295);"><img src="img/icon/ukFlag.jpg" height="25px" width="30px"></button>
+                                                  <button type="button" class="btn" style="background-color: rgb(61, 164, 233);"><img src="img/icon/japanFlag.jpg" height="25px" width="30px"></button>
+                                                  <button type="button" class="btn" style="background-color: rgb(61, 164, 233);"><img src="img/icon/mmFlag.svg" height="25px" width="30px"></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- breadcam_area_start -->
+    <div class="breadcam_area activity overlay2">
+        <div class="bradcam_text">
+            <h3>Activity</h3>
+        </div>
+    </div>
+    <!-- breadcam_area_end -->
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" ></a>
+    <!--================Blog Area =================-->
+    <section class="blog_area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 mb-5 mb-lg-0" style="margin: auto;">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item" id="article1">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/website-data/2.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>16</h3>
+                                    <p>Sep</p>
+                                    <p>2019</p>
+                                </a>
+                            </div>
+                            <div class="row gallery-item">
+                                <div class="col-md-4">
+                                    <a href="img/blog/new/37.JPG" class="img-pop-up">
+                                        <div class="single-gallery-image" style="background: url(img/blog/new/37.JPG);"></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="img/blog/new/63.JPG" class="img-pop-up">
+                                        <div class="single-gallery-image" style="background: url(img/blog/new/63.JPG);"></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="img/blog/new/64.JPG" class="img-pop-up">
+                                        <div class="single-gallery-image" style="background: url(img/blog/new/64.JPG);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h2>Opening Ceremony and Donation</h2>
+                                </a>
+                                <p>As for the opening ceremony of JKT Myanmar International Co., Ltd., we donated $500 to Pyin Nyar Mi Khin, the educational foundation of Myanmar Women Entrepreneurs’ Association (MWEA), to provide scholarships for primary school students in rural areas with the purpose of youth development in Myanmar.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="blog_item" id="article2">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/new/19.JPG" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>16</h3>
+                                    <p>Sep</p>
+                                    <p>2019</p>
+                                </a>
+                            </div>
+                            <div class="row gallery-item">
+                                <div class="col-md-6">
+                                    <a href="img/blog/new/20.JPG" class="img-pop-up">
+                                        <div class="single-gallery-image" style="background: url(img/blog/new/20.JPG);"></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="img/blog/new/65.JPG" class="img-pop-up">
+                                        <div class="single-gallery-image" style="background: url(img/blog/new/65.JPG);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h2>Donation of Wahso Robes to Monks</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                            </div>
+                        </article>
+
+                        <article class="blog_item" id="article3">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/website-data/12.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>09</h3>
+                                    <p>Jan</p>
+                                    <p>2020</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h2>Company Introduction Seminar at UIT</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                            </div>
+                        </article>
+
+                        <article class="blog_item" id="article4">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/website-data/8.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>09</h3>
+                                    <p>Jan</p>
+                                    <p>2020</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h2>Company Introduction Seminar at UCSY</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                            </div>
+                        </article>
+
+                        <article class="blog_item" id="article5">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/website-data/11.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>09</h3>
+                                    <p>Jan</p>
+                                    <p>2020</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h2>Company Introduction Seminar at YTU</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                            </div>
+                        </article>
+
+                        <article class="blog_item" id="article6">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/Website/3.JPG" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>10</h3>
+                                    <p>Nov</p>
+                                    <p>2019</p>
+                                </a>
+                            </div>
+                            <div class="row gallery-item">
+                                <div class="col-md-4">
+                                    <a href="img/blog/new/12.jpg" class="img-pop-up">
+                                        <div class="single-gallery-image" style="background: url(img/blog/new/12.jpg);"></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="img/blog/new/13.jpg" class="img-pop-up">
+                                        <div class="single-gallery-image" style="background: url(img/blog/new/13.jpg);"></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="img/blog/new/67.JPG" class="img-pop-up">
+                                        <div class="single-gallery-image" style="background: url(img/blog/new/67.JPG);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h2>Kahtain Ceremony</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                            </div>
+                        </article>
+
+                        <article class="blog_item" id="article7">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/new/1.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>12</h3>
+                                    <p>Feb</p>
+                                    <p>2020</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="single-blog.html">
+                                    <h2>Myanmar Japan Socio Economic Development Association (SEDA) Culture Exchange Event</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                            </div>
+                        </article>
+
+                        <article class="blog_item" id="article8">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/new/24.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>12</h3>
+                                    <p>Feb</p>
+                                    <p>2020</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="single-blog.html">
+                                    <h2>1 year Ceremony</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                            </div>
+                        </article>
+
+                        <nav class="blog-pagination justify-content-center d-flex">
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="whole-wrap">
+        <div class="container box_1170">
+            <div class="section-top-border">
+                <h3>Activity - Interview for Vocational Training</h3>
+                <div class="row gallery-item">
+                    <div class="col-md-4">
+                        <a href="img/blog/new/56.JPG" class="img-pop-up">
+                            <div class="single-gallery-image" style="background: url(img/blog/new/56.JPG);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/blog/new/58.JPG" class="img-pop-up">
+                            <div class="single-gallery-image" style="background: url(img/blog/new/58.JPG);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/blog/new/59.JPG" class="img-pop-up">
+                            <div class="single-gallery-image" style="background: url(img/blog/new/59.JPG);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="img/blog/new/60.JPG" class="img-pop-up">
+                            <div class="single-gallery-image" style="background: url(img/blog/new/60.JPG);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="img/blog/new/61.JPG" class="img-pop-up">
+                            <div class="single-gallery-image" style="background: url(img/blog/new/61.JPG);"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="container box_1170">
+                <div class="section-top-border">
+                    <h3>Activity Gallery</h3>
+                    <div class="row gallery-item">
+                        <div class="col-md-4">
+                            <a href="img/blog/website-data/2.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/2.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/website-data/5.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/5.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/website-data/6.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/6.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/website-data/7.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/7.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/website-data/8.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/8.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/website-data/9.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/9.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/website-data/10.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/10.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/website-data/17.jpg class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/17.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/website-data/12.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/12.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/website-data/18.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/website-data/18.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/4.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/4.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/5.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/5.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/6.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/6.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/new/7.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/7.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/new/8.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/8.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/9.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/9.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/10.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/10.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/11.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/11.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/new/17.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/17.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/new/18.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/18.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/14.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/14.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/22.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/22.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/16.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/16.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/new/48.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/48.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="img/blog/new/49.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/49.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/24.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/24.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/26.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/26.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/blog/new/36.jpg" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(img/blog/new/36.jpg);"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--================Blog Area =================-->
+
+    <!-- footer_start -->
+    <footer class="footer footer_bg" >
+        <div class="footer_top">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters ">
+                    <div class="col-xl-3 col-12 col-md-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="index.html" style="color: whitesmoke;">
+                                    <span style="font-weight: bolder; font-size: larger; color: #029eff;">JKT</span> International Myanmar
+                                </a>
+                                </a>
+                            </div>
+                            <ul class="social_links">
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-12 col-md-8">
+                        <div class="footer_header d-flex justify-content-between">
+                            <div class="footer_header_left">
+                                <h3>Join us for your business </h3>
+                                <p>We're here to give you a hand whenever you need.</p>
+                            </div>
+                            <div class="footer_btn">
+                                <a href="contact.html" class="boxed-btn2">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                                    <div class="col-xl-4 col-12 col-md-4">
+                                        <div class="footer_widget">
+                                            <h3 class="footer_heading">
+                                                Services
+                                            </h3>
+                                            <ul class="quick_links">
+                                                <li class="fa fa-circle" style="color: white;"><a href="oversea.html"> &nbsp; Overseas Employment Service (only Japan) </li>
+                                                <li class="fa fa-circle" style="color: white;"><a href="business.html"> &nbsp; Business Consultant Service</a></li>
+                                                <li class="fa fa-circle" style="color: white;"><a href="#"> &nbsp; IT Services</a></li><br>
+                                                <li class="fa fa-circle" style="color: white;"><a href="#"> &nbsp; Travel and Tours</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-12 col-md-4">
+                                        <div class="footer_widget">
+                                            <h3 class="footer_heading">
+                                                Training
+                                            </h3>
+                                            <ul class="quick_links">
+                                                <li class="fa fa-circle" style="color: white;"><a href="jp-school.html"> &nbsp; Japanese Language School</li>
+                                                <li class="fa fa-circle" style="color: white;"><a href="#"> &nbsp; Vocational Training</a></li>
+                                                <li class="fa fa-circle" style="color: white;"><a href="#"> &nbsp; HR Training</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-12 col-md-4 ">
+                                        <div class="footer_widget">
+                                            <h3 class="footer_heading">
+                                                Contact
+                                            </h3>
+                                            <ul class="quick_links">
+                                                <li class="fa fa-phone" style="color: white"> <a href="#"> &nbsp; +959 269 564 339</a></li><br/>
+                                                <li class="fa fa-phone" style="color: white"> <a href="#">  &nbsp; +959 770 411 708</a></li>
+                                                <li class="fa fa-map-marker" style="color: white"> <a href="#">  &nbsp;  No.86, 3A, Shinsawpu Road, Near Myaynigone Citymart, Sanchaung Township, Yangon, Myanmar </a></li>
+                                                <li class="fa fa-envelope" style="color: white"> <a href="#">  &nbsp;  jkt.mm.int@gmail.com </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer_end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
